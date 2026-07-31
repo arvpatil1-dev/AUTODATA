@@ -1,0 +1,8 @@
+sources:
+    - name: raw
+      database: DB
+      schema: RAW_SCH
+      tables:
+          - name: CUSTOMER
+          - name: ORDERS
+          - name: PRODUCT
