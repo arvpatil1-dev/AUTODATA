@@ -6,6 +6,6 @@ select
     ORDER_DATE,
     QUANTITY,
     QUANTITY*12 AS FINALPRICE,
-    quantity*3 as as discount
+    quantity*3 as  discount
 from {{ source('raw', 'ORDERS') }}
 
