@@ -16,8 +16,8 @@ select
     o.ORDER_DATE,
     o.QUANTITY,
     p.PRODUCT_ID,
-     p.CATEGORY
-    
+     p.CATEGORY,
+    c.city
 from orders o
 left join customers c on o.CUSTOMER_ID = c.CUSTOMER_ID
 left join products p on o.PRODUCT_ID = p.PRODUCT_ID
