@@ -1,6 +1,7 @@
 # AUTODATA
 
-This is my first dbt + GitHub Data Project.
+This is my first dbt + GitHub Data Project. 
+Built this in 7 days while learning dbt from scratch.
 
 ## What's inside this project
 - `models` : dbt transformation models for data processing
