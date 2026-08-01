@@ -1,8 +1,15 @@
+---
+version: 2
 sources:
-    - name: raw
-      database: DB
-      schema: RAW_SCH
-      tables:
-          - name: CUSTOMER
-          - name: ORDERS
-          - name: PRODUCT
+  - name: raw
+    database: AUTODATA
+    schema: RAW_AUTO
+    tables:
+      - name: CUSTOMER
+        columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+      - name: ORDERS
+      - name: PRODUCT
