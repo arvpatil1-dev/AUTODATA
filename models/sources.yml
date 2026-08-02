@@ -1,12 +1,20 @@
+version: 2
 sources:
     - name: raw
-      database: DB
-      schema: RAW_SCH
+      database: AUTODATA
+      schema: RAW_AUTO
       tables:
           - name: CUSTOMER
+            columns: 
+                - name: CUSTOMER_ID
+                  description: "the primary" 
+                  tests:
+                       - unique
+                       - not_null 
           - name: ORDERS
           - name: PRODUCT
-         
+
+
 models:
     - name: CUSTOMER
       description: "A starter dbt model"
@@ -16,6 +24,15 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: CUSTOMER_ID
+      columns:
+      - name: CITY
+        tests:
+          - dbt_utils.accepted_values:
+              arguments:
+                column_name: CITY
+                values: ['Pune', 'Mumbai', 'Jalna', 'Nashik','datawadi']
+                quote: false
 
     
 
