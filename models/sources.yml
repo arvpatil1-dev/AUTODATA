@@ -6,7 +6,7 @@ sources:
           - name: CUSTOMER
           - name: ORDERS
           - name: PRODUCT
-
+         
 models:
     - name: CUSTOMER
       description: "A starter dbt model"
