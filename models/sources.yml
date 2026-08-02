@@ -6,3 +6,16 @@ sources:
           - name: CUSTOMER
           - name: ORDERS
           - name: PRODUCT
+
+models:
+    - name: CUSTOMER
+      description: "A starter dbt model"
+      columns:
+          - name: CUSTOMER_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    
+
