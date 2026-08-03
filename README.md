@@ -12,4 +12,19 @@ This project demonstrates a modern data transformation pipeline using dbt and Sn
 3. **Documentation**: Auto-generated dbt docs for data lineage and model descriptions
 4. **Performance**: Used Snowflake Warehouses and dbt materializations for optimized queries
 
-## Project Structure
+## How to Run
+```bash
+# 1. Install dependencies
+dbt deps
+
+# 2. Run all models
+dbt run
+
+# 3. Test data quality
+dbt test
+
+# 4. Generate documentation
+dbt docs generate
+
+# 5. View documentation locally
+dbt docs serve
