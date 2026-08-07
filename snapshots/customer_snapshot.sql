@@ -7,7 +7,7 @@
       strategy='check',
       check_cols=['FIRST_NAME', 'LAST_NAME', 'EMAIL', 'CITY'],
       invalidate_hard_deletes=True,
-      snapshotted_at='DBT_UPDATED_AT'  
+      
     )
 }}
 
