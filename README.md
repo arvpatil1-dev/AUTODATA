@@ -28,3 +28,5 @@ dbt docs generate
 
 # 5. View documentation locally
 dbt docs serve
+## 📊 Data Lineage
+[**Live dbt Docs Graph**](https://oi940.us1.dbt.com/api/ide/v3/70506183148217/legacy/files/docs/index.html#!/overview?g_v=1)
